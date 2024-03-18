@@ -19,5 +19,4 @@ uvicorn==0.28.0
 watchfiles==0.21.0
 websockets==12.0
 llama-index==0.10.20
-python-multipart
-motor
+python-multipart==0.0.9
