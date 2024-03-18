@@ -84,10 +84,10 @@ export default function App() {
 
             <br />
             <FormControl id="file">
-              <FormLabel fontSize="lg" textAlign="center" fontFamily="Montserrat, sans-serif">Upload CSV or PDF file:</FormLabel>
+              <FormLabel fontSize="lg" textAlign="center" fontFamily="Montserrat, sans-serif">Upload CSV, TXT, DOC or PDF file:</FormLabel>
               <Input
                 type="file"
-                accept=".pdf,.csv"
+                accept=".pdf,.csv,.docx,.txt"
                 onChange={handleFileChange}
                 size="lg"
               />
@@ -115,44 +115,4 @@ export default function App() {
       </Box>
     </ChakraProvider>
   );
-  // return (
-  //   <div className="appBlock">
-  //     <form onSubmit={handleSubmit} className="form">
-  //       <label className="questionLabel" htmlFor="question">
-  //         Question:
-  //       </label>
-  //       <input
-  //         className="questionInput"
-  //         id="question"
-  //         type="text"
-  //         value={question}
-  //         onChange={handleQuestionChange}
-  //         placeholder="Ask your question here"
-  //       />
-
-  //       <br></br>
-  //       <label className="fileLabel" htmlFor="file">
-  //         Upload CSV file:
-  //       </label>
-
-  //       <input
-  //         type="file"
-  //         id="file"
-  //         name="file"
-  //         accept=".txt,.docx,.csv,.pdf"
-  //         onChange={handleFileChange}
-  //         className="fileInput"
-  //       />
-  //       <br></br>
-  //       <button
-  //         className="submitBtn"
-  //         type="submit"
-  //         disabled={!file || !question}
-  //       >
-  //         Submit
-  //       </button>
-  //     </form>
-  //     <p className="resultOutput">Result: {result}</p>
-  //   </div>
-  // );
-}
+  }
